@@ -6,6 +6,8 @@ public class main {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Bienvenido a la Radio del Carro");
+            System.out.println("Estacion Actual: " + myCarRadio.getCurrentStation());
+            System.out.println("Frecuencia Actual: " + myCarRadio.getCurrentFrequency());
             System.out.println("Seleccione una opcion:");
             System.out.println("1. Encender/Apagar Radio");
             System.out.println("2. Cambiar Estacion");
