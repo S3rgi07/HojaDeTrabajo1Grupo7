@@ -33,7 +33,7 @@ public class CarRadio {
                 currentFrecuency = 87.9;
             }
 
-        } else if (isAm == true) {
+        } else {
             if (currentFrecuency < 1610) {
                 currentFrecuency += 10;
             }
@@ -104,5 +104,9 @@ public class CarRadio {
         }
 
         return currentStation;
+    }
+
+    public boolean getIsOn() {
+        return isOn;
     }
 }
