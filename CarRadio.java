@@ -90,4 +90,18 @@ public class CarRadio {
             System.out.println("No hay frecuencia guardada en este slot");
         }
     };
+
+    public double getCurrentFrequency() {
+        return currentFrecuency;
+    }
+
+    public String getCurrentStation() {
+        if (isAm) {
+            currentStation = "AM";
+        } else {
+            currentStation = "FM";
+        }
+
+        return currentStation;
+    }
 }
