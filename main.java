@@ -40,11 +40,11 @@ public class main {
                         break;
 
                     case 3:
-                        myCarRadio.forwardFrequency((myCarRadio.getCurrentFrequency()));
+                        myCarRadio.forwardFrequency();
                         break;
 
                     case 4:
-                        myCarRadio.backwardFrequency((myCarRadio.getCurrentFrequency()));
+                        myCarRadio.backwardFrequency();
                         break;
 
                     case 5:

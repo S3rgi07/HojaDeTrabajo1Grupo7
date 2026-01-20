@@ -23,7 +23,7 @@ public class CarRadio {
 
     }
 
-    public void forwardFrequency(double currentFrecuency) {
+    public void forwardFrequency() {
         if (isAm == false) {
             if (currentFrecuency < 107.9) {
                 currentFrecuency += 0.2;
@@ -45,7 +45,7 @@ public class CarRadio {
 
     };
 
-    public void backwardFrequency(double currentFrecuency) {
+    public void backwardFrequency() {
         if (isAm == false) {
             if (currentFrecuency > 87.9) {
                 currentFrecuency -= 0.2;
