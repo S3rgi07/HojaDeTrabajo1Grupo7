@@ -103,6 +103,10 @@ public class CarRadio {
         return currentFrecuency;
     }
 
+    public void setCurrentFrequency(double frequency) {
+        this.currentFrecuency = frequency;
+    }
+
     public String getCurrentStation() {
         if (isAm) {
             currentStation = "AM";
@@ -115,5 +119,9 @@ public class CarRadio {
 
     public boolean getIsOn() {
         return isOn;
+    }
+
+    public boolean getIsAm() {
+        return isAm;
     }
 }

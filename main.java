@@ -21,11 +21,11 @@ public class main {
                 System.out.println("Frecuencia Actual: " + Math.round(myCarRadio.getCurrentFrequency() * 100.) / 100.0);
                 System.out.println("Seleccione una opcion:");
                 System.out.println("1. Encender/Apagar Radio");
-                System.out.println("2. Cambiar Estacion");
-                System.out.println("3. Avanzar Frecuencia");
-                System.out.println("4. Retroceder Frecuencia");
+                System.out.println("2. Cambiar Estacion"); // <--
+                System.out.println("3. Avanzar Frecuencia"); // <--
+                System.out.println("4. Retroceder Frecuencia"); // <--
                 System.out.println("5. Guardar Frecuencia");
-                System.out.println("6. Cargar Frecuencia Guardada");
+                System.out.println("6. Cargar Frecuencia Guardada"); // <--
                 System.out.println("7. Salir");
 
                 int option = scanner.nextInt();
