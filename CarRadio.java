@@ -8,76 +8,86 @@ public class CarRadio {
     private boolean isAm;
     private double[] slotsFavorites = new double[12];
 
-
-
-    public void changeStation(String currentStation){
+    public void changeStation(String currentStation) {
         if (isAm == true) {
             isAm = false;
             double holder = lastFrecuency;
             lastFrecuency = currentFrecuency;
             currentFrecuency = holder;
-        }
-        else {
+        } else {
             isAm = true;
             double holder = lastFrecuency;
             lastFrecuency = currentFrecuency;
             currentFrecuency = holder;
         }
 
-
     }
 
-    public void forwardFrequency(double currentFrecuency){
+    public void forwardFrequency(double currentFrecuency) {
         if (isAm == false) {
             if (currentFrecuency < 107.9) {
                 currentFrecuency += 0.2;
             }
 
-            else{
+            else {
                 currentFrecuency = 87.9;
             }
-        
-            
-        }
-        else if (isAm == true) {
+
+        } else if (isAm == true) {
             if (currentFrecuency < 1610) {
                 currentFrecuency += 10;
             }
 
-            else{
+            else {
                 currentFrecuency = 530;
             }
         }
 
     };
 
-    public void backwardFrequency(double currentFrecuency){
+    public void backwardFrequency(double currentFrecuency) {
         if (isAm == false) {
             if (currentFrecuency > 87.9) {
                 currentFrecuency -= 0.2;
             }
 
-            else{
+            else {
                 currentFrecuency = 107.9;
             }
-        
-            
-        }
-        else if (isAm == true) {
+
+        } else if (isAm == true) {
             if (currentFrecuency > 530) {
                 currentFrecuency -= 10;
             }
 
-            else{
+            else {
                 currentFrecuency = 1610;
             }
         }
     };
 
+    public void turnOnOff() {
+        if (isOn == false) {
+            isOn = true;
+            isAm = false;
+        } else {
+            isOn = false;
+        }
+    };
 
+    public void saveFrequency(double currentFrecuency, int slot) {
+        slotsFavorites[slot] = currentFrecuency;
 
+        if (slot > 12) {
+            System.out.println("Slot no existente");
+        }
+    };
 
-    
+    public void loadFrequency(int slot) {
+        currentFrecuency = slotsFavorites[slot];
 
-    
+        if (slotsFavorites[slot] == 0) {
+            System.out.println("No hay frecuencia guardada en este slot");
+        }
+    };
 }

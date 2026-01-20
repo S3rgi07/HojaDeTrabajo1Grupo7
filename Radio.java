@@ -5,7 +5,4 @@ public interface Radio {
     void turnOnOff();
     void saveFrequency(double frequency, int slot);
     void loadFrequency(int slot);
-
-
-    
 }
