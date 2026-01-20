@@ -70,6 +70,7 @@ public class CarRadio {
         if (isOn == false) {
             isOn = true;
             isAm = false;
+            currentFrecuency = 87.9;
         } else {
             isOn = false;
         }
