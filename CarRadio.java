@@ -21,7 +21,7 @@ public class CarRadio {
             isAm = true;
             double holder = lastFrecuency;
             lastFrecuency = currentFrecuency;
-            currentFrecuency = holdader;
+            currentFrecuency = holder;
         }
 
 
