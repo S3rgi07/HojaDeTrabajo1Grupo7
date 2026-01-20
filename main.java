@@ -29,11 +29,11 @@ public class main {
                     break;
 
                 case 3:
-                    myCarRadio.forwardFrequency(myCarRadio.getCurrentFrequency());
+                    myCarRadio.forwardFrequency((myCarRadio.getCurrentFrequency()));
                     break;
 
                 case 4:
-                    myCarRadio.backwardFrequency(myCarRadio.getCurrentFrequency());
+                    myCarRadio.backwardFrequency((myCarRadio.getCurrentFrequency()));
                     break;
 
                 case 5:
