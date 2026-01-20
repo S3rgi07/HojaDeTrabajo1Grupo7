@@ -18,7 +18,7 @@ public class main {
 
                 System.out.println("Bienvenido a la Radio del Carro");
                 System.out.println("Estacion Actual: " + myCarRadio.getCurrentStation());
-                System.out.println("Frecuencia Actual: " + myCarRadio.getCurrentFrequency());
+                System.out.println("Frecuencia Actual: " + Math.round(myCarRadio.getCurrentFrequency() * 100.) / 100.0);
                 System.out.println("Seleccione una opcion:");
                 System.out.println("1. Encender/Apagar Radio");
                 System.out.println("2. Cambiar Estacion");

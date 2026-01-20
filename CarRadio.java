@@ -85,7 +85,14 @@ public class CarRadio {
     };
 
     public void loadFrequency(int slot) {
+        lastFrecuency = currentFrecuency;
         currentFrecuency = slotsFavorites[slot];
+
+        if (currentFrecuency <= 1610 && currentFrecuency >= 530) {
+            isAm = true;
+        } else if (currentFrecuency <= 107.9 && currentFrecuency >= 87.9) {
+            isAm = false;
+        }
 
         if (slotsFavorites[slot] == 0) {
             System.out.println("No hay frecuencia guardada en este slot");
